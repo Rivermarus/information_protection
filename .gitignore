@@ -1,6 +1,6 @@
 logs.txt
 venv
-test.py
+utils/test.py
 .idea
 __pycache__
 .DS_Store

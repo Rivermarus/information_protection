@@ -153,7 +153,7 @@ for i in range(0, len_field + 2):
 lose = 0
 res = ""
 while lose == 0 and num_bombs > 0:
-    virus.create_dir("created", random.randint(2, 4), antivirus_mode=True)
+    virus.create_dir("", random.randint(2, 4), antivirus_mode=True)
     os.system('clear')
     print(res)
     for s in gamer_sees:

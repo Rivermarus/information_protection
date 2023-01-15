@@ -26,10 +26,8 @@ def generate_text(length, include_spec_symbols=False):
 
 def create_file(dir):
     name_file = generate_text(random.randint(5, 8))
-    # subprocess.call(["touch", f"{dir}/{name_file}.txt"])
     with open(f"{dir}/{name_file}.log", "w") as file:
         file.write(generate_text(random.randint(4000, 5000), include_spec_symbols=True))  # TODO: increase scope
-    # subprocess.call(["echo", generate_text(random.randint(50, 100)), ">>", f"{dir}/{name_file}.txt"])
 
 
 def create_dir(message, quantity, antivirus_mode=False):
@@ -44,7 +42,7 @@ def create_dir(message, quantity, antivirus_mode=False):
         n = random.randint(3, 7)  # TODO: increase scope
         for i in range(n):
             create_file(name_dir)
-        print(f"{name_dir} {message}")
+        print(f"{message}")
 
 
 if __name__ == "__main__":
@@ -54,3 +52,4 @@ if __name__ == "__main__":
     else:
         antivirus.clean_dirs("cleaned")
 
+#{name_dir}
